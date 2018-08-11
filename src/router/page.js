@@ -1,5 +1,6 @@
 import { createStackNavigator } from 'react-navigation';
 import login from '../pages/login';
+import signup from '../pages/signup';
 import home from '../pages/home';
 
 const commonSettings = {
@@ -21,6 +22,13 @@ const AppRouteConfigs = {
     screen: login,
     navigationOptions: {
       title: 'Login',
+      // header: null,
+    },
+  },
+  signup: {
+    screen: signup,
+    navigationOptions: {
+      title: 'Sign up',
       // header: null,
     },
   },
