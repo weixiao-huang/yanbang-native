@@ -19,6 +19,10 @@ export default class App extends React.Component {
     }
   }
 
+  login = () => {
+    this.props.navigation.navigate('home');
+  }
+
   render() {
     return (
       <MainContainer>
@@ -31,7 +35,7 @@ export default class App extends React.Component {
           onChangeText={v => this.setState({ password: v })}
           secureTextEntry
         />
-        <MainTouch onPress={() => this.props.navigation.navigate('home')}>
+        <MainTouch onPress={this.login}>
           <AuxView>
             <ButtonText>登录</ButtonText>
           </AuxView>
