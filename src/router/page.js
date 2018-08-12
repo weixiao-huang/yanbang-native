@@ -5,7 +5,7 @@ import home from '../pages/home';
 
 const commonSettings = {
   headerStyle: {
-    backgroundColor: '#ec5367',
+    backgroundColor: '#88969b',
   },
   headerTitleStyle: {
     color: 'white',
@@ -35,7 +35,7 @@ const AppRouteConfigs = {
   home: {
     screen: home,
     navigationOptions: {
-      title: 'Home',
+      title: '导师浏览',
       // header: null,
       ...commonSettings,
     },
